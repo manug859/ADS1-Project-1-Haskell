@@ -24,10 +24,10 @@ esPrimo n = (n>1) && not(existeDivisor n [2..n-1])
 existeDivisor :: Int -> [Int] -> Bool
 existeDivisor n xs = existe' xs (divisor n)
 
-divisor :: Int -> Int -> Bool--6)d.1)
+divisor :: Int -> Int -> Bool
 divisor n x = mod n x == 0
 
-existe' :: [a] -> (a -> Bool) -> Bool --b)
+existe' :: [a] -> (a -> Bool) -> Bool
 existe' [] f = False
 existe' (x:xs) f = f x || existe' xs f
 ```
