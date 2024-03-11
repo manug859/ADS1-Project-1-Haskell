@@ -11,7 +11,7 @@ Introduction into Haskell concepts such as types, functions and high order funct
 paratodo'' :: [a] -> (a -> Bool) -> Bool
 paratodo'' xs f = paratodo' xs f
 ```
-Where 'f' is any function with 'a -> Bool'
+Where 'f' is any function with type 'a -> Bool'
 
 ### Example
 ``` haskell 
