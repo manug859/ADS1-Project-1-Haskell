@@ -31,3 +31,7 @@ existe' :: [a] -> (a -> Bool) -> Bool
 existe' [] f = False
 existe' (x:xs) f = f x || existe' xs f
 ```
+### Download this repo
+```bash
+git clone https://github.com/manug859/ADS1-Project-1-Haskell
+```
